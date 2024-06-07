@@ -69,6 +69,7 @@ fun ProductsHomeScreen(navController: NavController, viewModel: ProductsViewMode
     val productsList by viewModel.productsList
 
     LaunchedEffect(Unit) {
+        viewModel.fetchProductsOnline()
         viewModel.fetchProductsOffline()
     }
 

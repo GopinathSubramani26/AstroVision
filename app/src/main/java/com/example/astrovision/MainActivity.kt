@@ -56,10 +56,7 @@ class MainActivity : ComponentActivity() {
                             ProductDetailScreen(navController = navController,viewModel = productDetailViewModel)
 
                         }
-
                     }
-                        productsViewModel.fetchProductsOnline()
-
                 }
             }
         }
